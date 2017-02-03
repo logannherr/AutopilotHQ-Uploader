@@ -11,7 +11,7 @@ headers = {'autopilotapikey': APIKey, 'Content-Type':'application/json'}
 batch = 100
 simRequests = 10   #Batches to run simultaneosly, max value 20
 
-stream = fs.createReadStream("./country.csv")
+stream = fs.createReadStream("./example.csv")
 
 fastCsv
 	.fromStream(stream)
